@@ -1,0 +1,163 @@
+.hero {
+    width: 92%;
+    margin: 0 auto;
+    padding: 24px 0px;
+    display: flex;
+    &-block1 {
+        width: 872px;
+        height: 600px;
+        border-radius: 10px;
+        background: linear-gradient(to right, #00000099, #00000000),
+            url(../../images/hero-bg1.jpg) left / cover no-repeat;
+        padding: 155px 216px 155px 60px;
+        &-content {
+            width: 500px;
+            height: 290px;
+            @include flex-column();
+            gap: 20px;
+            h1 {
+                font-family: poppins;
+                font-size: 46px;
+                font-weight: 600;
+                color: $text-white;
+                line-height: 120%;
+                letter-spacing: 1px;
+            }
+            h2 {
+                font-family: poppins;
+                font-size: 20px;
+                font-weight: 500;
+                color: $text-white;
+            }
+            h3 {
+                font-family: poppins;
+                font-size: 14px;
+                color: $text-white;
+                margin-top: -10px;
+            }
+            button {
+                width: 191px;
+                height: 51px;
+                border: none;
+                background-color: $text-white;
+                border-radius: 53px;
+                color: $button-bg;
+                font-weight: 600;
+                font-size: 16px;
+            }
+        }
+    }
+    &-right {
+        @include flex-column();
+        gap: 24px;
+        padding-left: 24px;
+        &-block2 {
+            width: 423px;
+            height: 288px;
+            border-radius: 10px;
+            background-image: url(../../images/hero-bg2.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 32px 235px 120px 32px;
+            &-content {
+                width: 160px;
+                height: 136px;
+                h1 {
+                    font-family: poppins;
+                    font-weight: 600;
+                    font-size: 32px;
+                    color: $text-black;
+                    line-height: 120%;
+                }
+                h2 {
+                    font-family: poppins;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 3%;
+                    color: $text-black;
+                    text-transform: uppercase;
+                }
+                p {
+                    font-family: poppins;
+                    font-size: 14px;
+                    color: $text-gray;
+                    line-height: 150%;
+                }
+                h3 {
+                    color: $button-bg;
+                    font-weight: 600;
+                    font-size: 16px;
+                    font-family: poppins;
+                    line-height: 120%;
+                }
+            }
+        }
+        &-block3 {
+            width: 423px;
+            height: 288px;
+            border-radius: 10px;
+            background-image: url(../../images/hero-bg3.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &-content {
+                @include flex-column();
+                @include flex-center();
+                padding: 67px 40px;
+                h2 {
+                    font-family: poppins;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $text-white;
+                    letter-spacing: 3%;
+                    text-transform: uppercase;
+                }
+                h1 {
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 120%;
+                    color: $text-white;
+                    font-family: poppins;
+                }
+                h3 {
+                    font-family: poppins;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 120%;
+                    color: $button-bg;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    &-info {
+        width: 92%;
+        height: 128px;
+        margin: 0 auto;
+        border-radius: 8px;
+        padding: 40px;
+        @include flex-between();
+        background-color: $text-white;
+        box-shadow: 8px 8px 50px #00260314;
+        &-card {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            h4 {
+                font-family: poppins;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 120%;
+                color: $text-black;
+                margin-top: 25px;
+            }
+            p {
+                font-family: poppins;
+                font-size: 14px;
+                line-height: 150%;
+                color: $header-text;
+            }
+        }
+    }
+}

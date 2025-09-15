@@ -1,0 +1,134 @@
+.header {
+    width: 100%;
+    margin: 0 auto;
+    @include flex-column();
+    &-top {
+        width: 92%;
+        height: 42px;
+        margin: 0 auto;
+        @include flex-between();
+        align-items: center;
+        h1 {
+            font-family: poppins;
+            font-size: 12px;
+            color: $text-gray;
+        }
+        &-right {
+            width: 232px;
+            height: 18px;
+            @include flex-between();
+            align-items: center;
+            select {
+                width: 45px;
+                height: 16px;
+                font-family: poppins;
+                font-size: 12px;
+                border: none;
+                background-color: transparent;
+                color: $text-gray;
+                outline: none;
+            }
+            button {
+                width: 100px;
+                height: 16px;
+                border: none;
+                font-family: poppins;
+                font-size: 12px;
+                color: $text-gray;
+                background-color: transparent;
+            }
+        }
+    }
+    &-content {
+        width: 92%;
+        height: 93px;
+        margin: 0 auto;
+        @include flex-between;
+        align-items: center;
+        border-top: 1px solid $border;
+        img {
+            width: 183px;
+            height: 38px;
+        }
+        &-center {
+            border: 1px solid $border;
+            width: 500px;
+            height: 45px;
+            border-radius: 6px;
+            padding-left: 16px;
+            @include flex-center();
+            button {
+                width: 100px;
+                height: 45px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                background-color: $button-bg;
+                color: $text-white;
+                border: none;
+                font-family: poppins;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            input {
+                width: 380px;
+                height: 43px;
+                border: none;
+                outline: none;
+                font-family: poppins;
+                font-size: 15px;
+                color: $text-grey;
+                margin-left: 5px;
+            }
+        }
+    }
+    &-bottom {
+        width: 100%;
+        height: 60px;
+        background-color: $hero-bg;
+        display: flex;
+        align-items: center;
+        &-content {
+            width: 92%;
+            margin: 0 auto;
+            @include flex-between();
+            align-items: center;
+            &-left {
+                display: flex;
+                gap: 30px;
+                select {
+                    width: 65px;
+                    height: 21px;
+                    border: none;
+                    background-color: transparent;
+                    font-size: 14px;
+                    color: $header-text;
+                    font-family: poppins;
+                    font-weight: 500;
+                    &:first-child {
+                        color: $text-white;
+                    }
+                    option {
+                        background-color: $hero-bg;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    font-family: poppins;
+                    font-size: 14px;
+                    color: $header-text;
+                }
+            }
+            &-right {
+                @include flex-center();
+                h1 {
+                    font-family: poppins;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $text-white;
+                    margin-top: 10px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
