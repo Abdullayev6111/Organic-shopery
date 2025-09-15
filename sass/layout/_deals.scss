@@ -45,6 +45,89 @@
             grid-area: main;
             border: 1px solid #2c742f;
             box-shadow: 0 0 5px #2c742f;
+            position: relative;
+            &-top {
+                width: 100%;
+                height: 445px;
+                border: 1px solid transparent;
+                padding-bottom: 23px;
+                background: url(../../images/main-card-image.png) center/cover
+                    no-repeat;
+                background-color: $text-white;
+                &-sales {
+                    width: 168px;
+                    height: 27px;
+                    gap: 8px;
+                    position: absolute;
+                    top: 25px;
+                    left: 25px;
+                    @include flex-between();
+                    &-1 {
+                        width: 80px;
+                        height: 27px;
+                        border-radius: 4px;
+                        padding: 3px 8px;
+                        gap: 4px;
+                        background-color: #ea4b48;
+                        h1 {
+                            font-family: poppins;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $text-white;
+                            span {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    &-2 {
+                        width: 80px;
+                        height: 27px;
+                        border-radius: 4px;
+                        padding: 3px 8px;
+                        gap: 4px;
+                        background-color: #2388ff;
+                        h1 {
+                            font-family: poppins;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $text-white;
+                        }
+                    }
+                }
+                &-buttons {
+                    width: 100%;
+                    height: 46px;
+                    padding: 0 24px;
+                    gap: 8px;
+                    @include flex-between();
+                    margin-top: 377px;
+                    button {
+                        width: 371px;
+                        height: 45px;
+                        background-color: $button-bg;
+                        border-radius: 43px;
+                        padding: 14px 32px;
+                        gap: 12px;
+                        color: $text-white;
+                        font-family: poppins;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 120%;
+                        border: none;
+                    }
+                    div {
+                        @include flex-center();
+                        width: 46px;
+                        height: 46px;
+                        border-radius: 50%;
+                        background-color: #f2f2f2;
+                    }
+                }
+            }
+            &-bottom {
+                text-align: center;
+                background-color: $text-white;
+            }
         }
         &-card1 {
             grid-area: sec1;

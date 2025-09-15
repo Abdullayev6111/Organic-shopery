@@ -751,6 +751,92 @@
   grid-area: main;
   border: 1px solid #2c742f;
   box-shadow: 0 0 5px #2c742f;
+  position: relative;
+}
+.deals-content-main-card-top {
+  width: 100%;
+  height: 445px;
+  border: 1px solid transparent;
+  padding-bottom: 23px;
+  background: url(../../images/main-card-image.png) center/cover no-repeat;
+  background-color: white;
+}
+.deals-content-main-card-top-sales {
+  width: 168px;
+  height: 27px;
+  gap: 8px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.deals-content-main-card-top-sales-1 {
+  width: 80px;
+  height: 27px;
+  border-radius: 4px;
+  padding: 3px 8px;
+  gap: 4px;
+  background-color: #ea4b48;
+}
+.deals-content-main-card-top-sales-1 h1 {
+  font-family: poppins;
+  font-size: 14px;
+  line-height: 150%;
+  color: white;
+}
+.deals-content-main-card-top-sales-1 h1 span {
+  font-weight: 500;
+}
+.deals-content-main-card-top-sales-2 {
+  width: 80px;
+  height: 27px;
+  border-radius: 4px;
+  padding: 3px 8px;
+  gap: 4px;
+  background-color: #2388ff;
+}
+.deals-content-main-card-top-sales-2 h1 {
+  font-family: poppins;
+  font-size: 14px;
+  line-height: 150%;
+  color: white;
+}
+.deals-content-main-card-top-buttons {
+  width: 100%;
+  height: 46px;
+  padding: 0 24px;
+  gap: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 377px;
+}
+.deals-content-main-card-top-buttons button {
+  width: 371px;
+  height: 45px;
+  background-color: #00b207;
+  border-radius: 43px;
+  padding: 14px 32px;
+  gap: 12px;
+  color: white;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  border: none;
+}
+.deals-content-main-card-top-buttons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+.deals-content-main-card-bottom {
+  text-align: center;
+  background-color: white;
 }
 .deals-content-card1 {
   grid-area: sec1;
