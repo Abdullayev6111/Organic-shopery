@@ -1,0 +1,86 @@
+.news {
+    width: 92%;
+    margin: 60px auto;
+    h1 {
+        font-family: poppins;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 120%;
+        text-align: center;
+        color: $text-black;
+    }
+    &-content {
+        margin-top: 32px;
+        @include flex-between();
+        &-card {
+            width: 424px;
+            height: 494px;
+            border-radius: 8px;
+            border: 2px solid red;
+            &-bottom {
+                width: 100%;
+                height: 170px;
+                gap: 20px;
+                padding: 24px;
+                background-color: $text-white;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                div {
+                    width: 304px;
+                    height: 21px;
+                    @include flex-between();
+                    h2 {
+                        font-family: poppins;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: $card-text;
+                        span {
+                        }
+                    }
+                }
+                h1 {
+                    font-family: poppins;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #2c742f;
+                }
+            }
+            &-top {
+                width: 100%;
+                height: 320px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                padding-top: 242px;
+                padding-left: 24px;
+
+                background: url(../../images/news-img.jpg) center bottom/cover
+                    no-repeat;
+                &-date {
+                    @include flex-center();
+                    flex-direction: column;
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 4px;
+                    background-color: $text-white;
+                    h1 {
+                        font-family: poppins;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 150%;
+                        color: $text-black;
+                    }
+                    h2 {
+                        font-family: poppins;
+                        font-size: 12px;
+                        font-weight: 500;
+                        letter-spacing: 3%;
+                        text-transform: uppercase;
+                        color: $text-grey;
+                        margin-top: -10px;
+                    }
+                }
+            }
+        }
+    }
+}

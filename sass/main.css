@@ -706,7 +706,7 @@
 
 .deals {
   width: 92%;
-  margin: 0 auto;
+  margin: 0px auto;
   padding: 60px 0px;
   background-color: #f7f7f7;
 }
@@ -740,9 +740,8 @@
   padding-top: 32px;
   max-width: 1320px;
   width: 100%;
-  height: 981px;
+  height: 1000px;
   display: grid;
-  gap: 2px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "main main sec1 sec2 sec3" "main main sec4 sec5 sec6" "sec7 sec8 sec9 sec10 sec11";
@@ -1750,4 +1749,143 @@
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
+}
+
+.summer-sale {
+  width: 92%;
+  margin: 60px auto;
+  padding: 60px 51px 139px 828px;
+  background: url(../../images/summer-sale.jpg) center/cover no-repeat;
+}
+.summer-sale-content {
+  width: 440px;
+  height: 240px;
+}
+.summer-sale-content h2 {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  color: white;
+}
+.summer-sale-content h1 {
+  font-family: poppins;
+  font-size: 56px;
+  line-height: 120%;
+  color: white;
+}
+.summer-sale-content h1 span {
+  font-weight: 600;
+  color: #ff8a00;
+}
+.summer-sale-content p {
+  font-family: poppins;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 10px;
+  color: white;
+  opacity: 0.7;
+}
+.summer-sale-content button {
+  width: 192px;
+  height: 51px;
+  border-radius: 43px;
+  padding: 16px 40px;
+  gap: 16px;
+  background-color: #00b207;
+  color: white;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  border: none;
+  margin-top: 15px;
+}
+
+.news {
+  width: 92%;
+  margin: 60px auto;
+}
+.news h1 {
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: #1a1a1a;
+}
+.news-content {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.news-content-card {
+  width: 424px;
+  height: 494px;
+  border-radius: 8px;
+  border: 2px solid red;
+}
+.news-content-card-bottom {
+  width: 100%;
+  height: 170px;
+  gap: 20px;
+  padding: 24px;
+  background-color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.news-content-card-bottom div {
+  width: 304px;
+  height: 21px;
+  display: flex;
+  justify-content: space-between;
+}
+.news-content-card-bottom div h2 {
+  font-family: poppins;
+  font-size: 14px;
+  line-height: 150%;
+  color: #4d4d4d;
+}
+.news-content-card-bottom h1 {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2c742f;
+}
+.news-content-card-top {
+  width: 100%;
+  height: 320px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-top: 242px;
+  padding-left: 24px;
+  background: url(../../images/news-img.jpg) center bottom/cover no-repeat;
+}
+.news-content-card-top-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 58px;
+  height: 58px;
+  border-radius: 4px;
+  background-color: white;
+}
+.news-content-card-top-date h1 {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1a1a1a;
+}
+.news-content-card-top-date h2 {
+  font-family: poppins;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: #808080;
+  margin-top: -10px;
 }/*# sourceMappingURL=main.css.map */

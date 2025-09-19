@@ -1,0 +1,51 @@
+.summer-sale {
+    width: 92%;
+    margin: 60px auto;
+    padding: 60px 51px 139px 828px;
+    background: url(../../images/summer-sale.jpg) center / cover no-repeat;
+    &-content {
+        width: 440px;
+        height: 240px;
+        h2 {
+            font-family: poppins;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 2%;
+            text-transform: uppercase;
+            color: $text-white;
+        }
+        h1 {
+            font-family: poppins;
+            font-size: 56px;
+            line-height: 120%;
+            color: $text-white;
+            span {
+                font-weight: 600;
+                color: #ff8a00;
+            }
+        }
+        p {
+            font-family: poppins;
+            font-size: 16px;
+            line-height: 150%;
+            margin-top: 10px;
+            color: $text-white;
+            opacity: 0.7;
+        }
+        button {
+            width: 192px;
+            height: 51px;
+            border-radius: 43px;
+            padding: 16px 40px;
+            gap: 16px;
+            background-color: $button-bg;
+            color: $text-white;
+            font-family: poppins;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 120%;
+            border: none;
+            margin-top: 15px;
+        }
+    }
+}
