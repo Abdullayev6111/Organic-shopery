@@ -1,0 +1,76 @@
+.testimonials {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 60px 0;
+    &-top {
+        width: 92%;
+        height: 45px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+        @include flex-between();
+        &-buttons {
+            display: flex;
+            gap: 20px;
+            &-1 {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-color: $text-white;
+                @include flex-center();
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: $button-bg;
+                    path {
+                        stroke: $text-white;
+                    }
+                }
+            }
+        }
+    }
+    &-content {
+        width: 92%;
+        margin: 20px auto;
+        @include flex-between();
+        &-card {
+            width: 424px;
+            height: 254px;
+            border-radius: 8px;
+            padding: 24px;
+            gap: 16px;
+            background-color: $text-white;
+            filter: drop-shadow(0 10px 0px #00000003);
+            @include flex-column();
+            p {
+                font-family: poppins;
+                font-size: 14px;
+                line-height: 150%;
+                color: $card-text;
+                margin-top: -10px;
+            }
+            &-bottom {
+                width: 376px;
+                height: 64px;
+                padding-top: 8px;
+                @include flex-between();
+                align-items: center;
+                h2 {
+                    font-family: poppins;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 150%;
+                    color: $text-black;
+                    margin-left: -80px;
+                    span {
+                        color: $header-text;
+                    }
+                }
+                img {
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

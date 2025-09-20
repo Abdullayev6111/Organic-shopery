@@ -1,0 +1,131 @@
+.partners {
+    width: 100%;
+    background-color: $text-white;
+    &-card {
+        width: 92%;
+        height: 152px;
+        margin: 0 auto;
+        @include flex-between();
+        align-items: center;
+    }
+    &-follow {
+        width: 92%;
+        margin: 0 auto;
+        height: 270px;
+        margin-bottom: 60px;
+        h1 {
+            font-family: poppins;
+            font-weight: 600;
+            font-size: 32px;
+            text-align: center;
+            line-height: 120%;
+            color: $text-black;
+        }
+        &-content {
+            margin-top: 32px;
+            @include flex-between();
+            display: flex;
+            gap: 15px;
+
+            .img-box {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    display: block;
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #2b572ecc;
+                    @include flex-center();
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    border-radius: 10px;
+
+                    i {
+                        font-size: 30px;
+                        color: white;
+                    }
+                }
+
+                &:hover {
+                    .overlay {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    &-newsletter {
+        width: 100%;
+        height: 162px;
+        align-items: center;
+        display: flex;
+        background-color: #f7f7f7;
+        &-content {
+            width: 92%;
+            margin: 0 auto;
+            @include flex-between();
+            align-items: center;
+            &-1 {
+                width: 445px;
+                height: 82px;
+                h1 {
+                    font-family: poppins;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 150%;
+                    color: $text-black;
+                }
+                p {
+                    font-family: poppins;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: $header-text;
+                }
+            }
+            &-2 {
+                display: flex;
+                input {
+                    width: 492px;
+                    height: 52px;
+                    border-radius: 46px;
+                    border: 1px solid $border;
+                    padding: 14px 24px;
+                    gap: 10px;
+                    background-color: $text-white;
+                    outline: none;
+                    font-family: poppins;
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+                button {
+                    width: 162px;
+                    height: 52px;
+                    border-radius: 43px;
+                    padding: 16px 40px;
+                    gap: 16px;
+                    background-color: $button-bg;
+                    color: $text-white;
+                    font-family: poppins;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    border: none;
+                    margin-left: -150px;
+                }
+            }
+        }
+    }
+}
