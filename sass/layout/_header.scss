@@ -104,10 +104,12 @@
                     color: $header-text;
                     font-family: poppins;
                     font-weight: 500;
+                    outline: none;
                     &:first-child {
                         color: $text-white;
                     }
                     option {
+                        outline: none;
                         background-color: $hero-bg;
                     }
                 }
