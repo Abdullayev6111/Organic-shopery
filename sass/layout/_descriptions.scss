@@ -1,0 +1,135 @@
+.descriptions {
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    &-top {
+        width: 100%;
+        height: 56px;
+        @include flex-center();
+        border-bottom: 1px solid $border;
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            width: 132px;
+            font-family: poppins;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: $text-black;
+        }
+        h2 {
+            width: 214px;
+            font-family: poppins;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: $text-grey;
+            cursor: pointer;
+        }
+        h3 {
+            width: 196px;
+            font-family: poppins;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: $text-grey;
+            cursor: pointer;
+        }
+    }
+    &-content {
+        width: 100%;
+        padding-top: 32px;
+        @include flex-between();
+        &-left {
+            width: 648px;
+            height: 435px;
+            @include flex-column();
+            gap: 7px;
+            p {
+                font-family: poppins;
+                font-size: 14px;
+                line-height: 150%;
+                color: $text-grey;
+            }
+            h2 {
+                font-family: poppins;
+                font-size: 14px;
+                line-height: 140%;
+                color: $text-grey;
+            }
+        }
+        &-right {
+            width: 536px;
+            .description-img {
+                width: 536px;
+                height: 300px;
+                border-radius: 6px;
+                @include flex-center();
+                background: url(../../images/description-img.png) center/cover
+                    no-repeat;
+                &-circle {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: $button-bg;
+                    @include flex-center();
+                }
+            }
+            .description-card {
+                width: 537px;
+                height: 95px;
+                margin-top: 20px;
+                border-radius: 6px;
+                border: 1px solid $border;
+                @include flex-between();
+                padding: 24px 20px;
+                background-color: $text-white;
+                &-1 {
+                    display: flex;
+                    width: 242px;
+                    height: 47px;
+                    gap: 12px;
+                    &-text {
+                        @include flex-column();
+                        h1 {
+                            font-family: poppins;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $text-black;
+                        }
+                        h2 {
+                            font-family: poppins;
+                            font-size: 13px;
+                            line-height: 150%;
+                            color: $text-grey;
+                        }
+                    }
+                }
+                &-2 {
+                    display: flex;
+                    width: 233px;
+                    height: 47px;
+                    gap: 12px;
+                    &-text {
+                        @include flex-column();
+                        h1 {
+                            font-family: poppins;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: $text-black;
+                        }
+                        h2 {
+                            font-family: poppins;
+                            font-size: 13px;
+                            line-height: 150%;
+                            color: $text-grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
