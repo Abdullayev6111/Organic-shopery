@@ -160,4 +160,91 @@
             }
         }
     }
+    @media (max-width: 1200px) {
+        width: 100%;
+        &-block1 {
+            width: 780px;
+        }
+        &-right {
+            padding-left: 20px;
+            &-block2 {
+                width: 370px;
+            }
+            &-block3 {
+                width: 370px;
+            }
+        }
+        &-info {
+            width: 98%;
+            &-card {
+                gap: 0px;
+                h4 {
+                    font-size: 14px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        flex-direction: column;
+        &-block1 {
+            width: 100%;
+        }
+        &-right {
+            flex-direction: row;
+            margin-top: 20px;
+            padding-left: 0px;
+            &-block2 {
+                width: 49%;
+            }
+            &-block3 {
+                width: 49%;
+                &-content {
+                    h1 {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+        &-info {
+            width: 100%;
+        }
+    }
+    @media (max-width: 768px) {
+        &-info {
+            padding: 15px;
+            &-card {
+                h4 {
+                    font-size: 10px;
+                }
+                p {
+                    font-size: 10px;
+                }
+                svg {
+                    width: 35px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        &-right {
+            &-block2 {
+                height: 230px;
+            }
+            &-block3 {
+                &-content {
+                    padding: 60px 30px;
+                    h1 {
+                        font-size: 22px;
+                    }
+                }
+                height: 230px;
+            }
+        }
+    }
+    @media (max-width: 360px) {
+    }
 }

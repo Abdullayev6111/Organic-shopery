@@ -128,7 +128,45 @@
             border-bottom: 1px solid $border;
             @include flex-between();
             align-items: center;
-            button {
+            .count {
+                width: 124px;
+                height: 50px;
+                border-radius: 170px;
+                border: 1px solid $border;
+                padding: 8px;
+                background-color: $text-white;
+                @include flex-between();
+                align-items: center;
+                &-minus {
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    border: none;
+                    @include flex-center();
+                    background-color: #f2f2f2;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                &-plus {
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    border: none;
+                    @include flex-center();
+                    background-color: #f2f2f2;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                h1 {
+                    font-family: poppins;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: $text-black;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+            .main-btn {
                 width: 447px;
                 height: 51px;
                 border-radius: 43px;

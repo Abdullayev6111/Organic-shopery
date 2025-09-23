@@ -142,3 +142,19 @@ $(document).ready(function () {
 
     console.log("Gallery initialized:", { totalImages, currentIndex });
 });
+
+const plusBtn = document.getElementById("plus");
+const minusBtn = document.getElementById("minus");
+const text = document.getElementById("text");
+
+minusBtn.addEventListener("click", () => {
+    let count = +text.innerHTML;
+    if (count > 0) {
+        text.innerHTML = count - 1;
+    }
+});
+
+plusBtn.addEventListener("click", () => {
+    let count = +text.innerHTML;
+    text.innerHTML = count + 1;
+});

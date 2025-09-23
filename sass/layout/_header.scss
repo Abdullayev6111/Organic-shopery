@@ -94,6 +94,7 @@
             align-items: center;
             &-left {
                 display: flex;
+                align-items: center;
                 gap: 30px;
                 select {
                     width: 65px;
@@ -129,6 +130,99 @@
                     color: $text-white;
                     margin-top: 10px;
                     margin-left: 5px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1200px) {
+        &-top {
+            h1 {
+                margin-top: 10px;
+            }
+        }
+        &-bottom {
+            width: 100%;
+        }
+    }
+    @media (max-width: 992px) {
+        &-content {
+            &-center {
+                width: 400px;
+            }
+        }
+        &-bottom {
+            &-content {
+                &-left {
+                    select {
+                        font-size: 12px;
+                    }
+                    a {
+                        font-size: 12px;
+                    }
+                }
+                &-right {
+                    h1 {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        &-content {
+            &-right {
+                display: none;
+            }
+        }
+        &-bottom {
+            &-content {
+                &-left {
+                    gap: 15px;
+                    select {
+                        font-size: 12px;
+                    }
+                    a {
+                        font-size: 12px;
+                    }
+                }
+                &-right {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        &-top {
+            h1 {
+                font-size: 9px;
+                margin-top: 10px;
+            }
+        }
+        &-bottom {
+            &-content {
+                &-left {
+                    gap: 25px;
+                }
+                &-right {
+                    display: none;
+                }
+            }
+        }
+        &-content {
+            img {
+                width: 150px;
+            }
+            &-center {
+                width: 300px;
+                input {
+                    width: 300px;
+                    font-size: 13px;
+                }
+                button {
+                    font-size: 12px;
                 }
             }
         }
