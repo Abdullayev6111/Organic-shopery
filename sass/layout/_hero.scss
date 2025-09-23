@@ -230,6 +230,20 @@
         }
     }
     @media (max-width: 576px) {
+        &-block1 {
+            height: 400px;
+            padding-top: 100px;
+            padding-left: 30px;
+            &-content {
+                gap: 10px;
+                h1 {
+                    font-size: 35px;
+                }
+                h2 {
+                    font-size: 16px;
+                }
+            }
+        }
         &-right {
             &-block2 {
                 height: 230px;
