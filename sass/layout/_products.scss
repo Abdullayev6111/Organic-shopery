@@ -133,4 +133,37 @@
             }
         }
     }
+    @media (max-width: 1200px) {
+        &-content {
+            @include flex-between();
+            gap: 10px;
+            &-card:first-child {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        &-content {
+            &-card:first-child {
+                // display: block;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        &-content {
+            justify-content: space-evenly;
+        }
+    }
+    @media (max-width: 576px) {
+        &-content {
+            &-card:first-child {
+                display: block;
+            }
+            &-card {
+                width: 240px;
+                height: 327px;
+            }
+            justify-content: space-between;
+        }
+    }
 }

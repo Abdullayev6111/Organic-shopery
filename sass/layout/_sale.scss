@@ -158,4 +158,48 @@
             }
         }
     }
+    @media (max-width: 1200px) {
+        gap: 30px;
+        &-card1 {
+            width: 400px;
+            height: 500px;
+        }
+        &-card2 {
+            width: 400px;
+            height: 500px;
+        }
+        &-card3 {
+            width: 400px;
+            height: 500px;
+        }
+    }
+    @media (max-width: 992px) {
+        &-card1 {
+            height: 400px;
+        }
+        &-card2 {
+            height: 400px;
+        }
+        &-card3 {
+            height: 400px;
+        }
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        @include flex-center();
+        &-card1 {
+            width: 424px;
+            height: 536px;
+        }
+        &-card2 {
+            width: 424px;
+            height: 536px;
+        }
+        &-card3 {
+            width: 424px;
+            height: 536px;
+        }
+    }
+    @media (max-width: 576px) {
+    }
 }
