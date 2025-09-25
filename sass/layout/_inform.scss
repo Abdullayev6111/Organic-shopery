@@ -84,7 +84,7 @@
                 font-size: 14px;
                 line-height: 150%;
                 color: $text-grey;
-                width: 568px;
+                // width: 568px;
             }
             &-top {
                 margin-bottom: 16px;
@@ -203,5 +203,28 @@
                 }
             }
         }
+    }
+    @media (max-width: 1200px) {
+        width: 100%;
+        gap: 30px;
+    }
+    @media (max-width: 991px) {
+        &-right {
+            &-content {
+                p {
+                    font-size: 12px;
+                }
+            }
+            &-buttons {
+                gap: 20px;
+                .main-btn {
+                    width: 250px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 576px) {
     }
 }
