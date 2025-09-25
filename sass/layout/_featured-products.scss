@@ -1,0 +1,30 @@
+.featured-products {
+    @media (max-width: 1200px) {
+        .products-content {
+            &-card:last-child {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .products-content {
+            &-card:last-child {
+                display: block;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .products-content {
+            &-card.eggplant {
+                display: block;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .products-content {
+            &-card.eggplant {
+                display: none;
+            }
+        }
+    }
+}
