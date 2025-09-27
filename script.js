@@ -1,71 +1,42 @@
-// Student Management System
+const btnDrawer = document.getElementById("btn-drawer");
+const overlayDrawer = document.getElementById("overlay-drawer");
+const drawer = document.getElementById("drawer");
+const closeDrawer = document.getElementById("closeDraw");
 
-// class Student {
-//     constructor(id, name, grades) {
-//         this.id = id;
-//         this.name = name;
-//         this.grades = grades;
-//     }
-//     addGrade(grade) {
-//         this.grades.push(grade);
-//     }
-//     getAverage() {
-//         const sum = this.grades.reduce((total, num) => total + num, 0);
-//         return sum / this.grades.length;
-//     }
-// }
-// const user = new Student(1, "Abu", [90, 80, 85]);
+btnDrawer.addEventListener("click", () => {
+    drawer.classList.add("open");
+    overlayDrawer.classList.add("open");
+});
 
-// user.addGrade(95);
-// console.log(user.getAverage());
+closeDrawer.addEventListener("click", () => {
+    drawer.classList.remove("open");
+    overlayDrawer.classList.remove("open");
+});
 
-// Shape (Inheritance + Polymorphism)
+overlayDrawer.addEventListener("click", () => {
+    drawer.classList.remove("open");
+    overlayDrawer.classList.remove("open");
+});
 
-// class Shape {
-//     area() {
-//         return 0;
-//     }
-// }
+const btnModal = document.getElementById("btn-modal");
+const overlayModal = document.getElementById("overlay-modal");
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("closeMod");
 
-// class Circle extends Shape {
-//     constructor(r) {
-//         super();
-//         this.r = r;
-//     }
-//     area() {
-//         return Math.floor(Math.PI * this.r ** 2);
-//     }
-// }
+btnModal.addEventListener("click", () => {
+    modal.classList.add("show");
+    overlayModal.classList.add("show");
+});
 
-// class Square extends Shape {
-//     constructor(a) {
-//         super();
-//         this.a = a;
-//     }
-//     area() {
-//         return this.a * this.a;
-//     }
-// }
+closeModal.addEventListener("click", () => {
+    modal.classList.remove("show");
+    overlayModal.classList.remove("show");
+});
 
-// class Rectangle extends Shape {
-//     constructor(a, b) {
-//         super();
-//         this.a = a;
-//         this.b = b;
-//     }
-//     area() {
-//         return this.a * this.b;
-//     }
-// }
-
-// const circ = new Circle(5);
-// console.log(circ.area());
-
-// const sqr = new Square(4);
-// console.log(sqr.area());
-
-// const rec = new Rectangle(4, 6);
-// console.log(rec.area());
+overlayModal.addEventListener("click", () => {
+    modal.classList.remove("show");
+    overlayModal.classList.remove("show");
+});
 
 $(document).ready(function () {
     const $thumbnails = $(".gallery-thumbs img");
