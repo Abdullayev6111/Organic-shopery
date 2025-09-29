@@ -6,16 +6,19 @@ const closeDrawer = document.getElementById("closeDraw");
 btnDrawer.addEventListener("click", () => {
     drawer.classList.add("open");
     overlayDrawer.classList.add("open");
+    document.body.style.overflowY = "hidden";
 });
 
 closeDrawer.addEventListener("click", () => {
     drawer.classList.remove("open");
     overlayDrawer.classList.remove("open");
+    document.body.style.overflowY = "auto";
 });
 
 overlayDrawer.addEventListener("click", () => {
     drawer.classList.remove("open");
     overlayDrawer.classList.remove("open");
+    document.body.style.overflowY = "auto";
 });
 
 const btnModal = document.getElementById("btn-modal");
@@ -26,16 +29,19 @@ const closeModal = document.getElementById("closeMod");
 btnModal.addEventListener("click", () => {
     modal.classList.add("show");
     overlayModal.classList.add("show");
+    document.body.style.overflowY = "hidden";
 });
 
 closeModal.addEventListener("click", () => {
     modal.classList.remove("show");
     overlayModal.classList.remove("show");
+    document.body.style.overflowY = "auto";
 });
 
 overlayModal.addEventListener("click", () => {
     modal.classList.remove("show");
     overlayModal.classList.remove("show");
+    document.body.style.overflowY = "auto";
 });
 
 $(document).ready(function () {

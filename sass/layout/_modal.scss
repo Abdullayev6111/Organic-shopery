@@ -8,12 +8,13 @@
     bottom: 0;
     right: 0;
     transform: translateY(-100vh);
+    transition: transform 0.3s ease;
     .modal {
         width: 872px;
         height: 400px;
         background-color: white;
         transform: translateY(0);
-        transition: transform 0.3s ease;
+        // transition: transform 0.3s ease;
         position: absolute;
         top: 200px;
         left: 370px;

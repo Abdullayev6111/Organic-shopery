@@ -523,13 +523,14 @@
   background-color: rgba(0, 0, 0, 0.7);
   display: grid;
   place-content: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  overflow-x: hidden;
-  transform: translateY(-100vh);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
 }
 .overlay-drawer .drawer {
   width: 456px;
@@ -542,9 +543,9 @@
   top: 0;
   right: 0;
   transform: translateX(0px);
-  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: space-between;
 }
 .overlay-drawer .drawer-top {
@@ -691,13 +692,13 @@
   bottom: 0;
   right: 0;
   transform: translateY(-100vh);
+  transition: transform 0.3s ease;
 }
 .overlay-modal .modal {
   width: 872px;
   height: 400px;
   background-color: white;
   transform: translateY(0);
-  transition: transform 0.3s ease;
   position: absolute;
   top: 200px;
   left: 370px;
