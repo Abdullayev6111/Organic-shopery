@@ -3,6 +3,7 @@
     margin: 0 auto;
     background-color: #f2f2f2;
     padding: 60px 0;
+    overflow: hidden;
     &-top {
         width: 92%;
         height: 45px;
@@ -19,6 +20,7 @@
                 background-color: $text-white;
                 @include flex-center();
                 transition: all 0.3s ease;
+                border: none;
                 &:hover {
                     background-color: $button-bg;
                     path {
@@ -31,13 +33,18 @@
     &-content {
         width: 92%;
         margin: 20px auto;
-        @include flex-between();
+        overflow: hidden;
+        gap: 20px;
+        transition: transform 0.3s ease-in-out;
+        display: flex;
         &-card {
-            width: 424px;
+            // width: 424px;
+            width: 33.3%;
             height: 254px;
             border-radius: 8px;
             padding: 24px;
             gap: 16px;
+            flex: 0 0 33.33%;
             background-color: $text-white;
             filter: drop-shadow(0 10px 0px #00000003);
             @include flex-column();
@@ -52,7 +59,8 @@
                 width: 376px;
                 height: 64px;
                 padding-top: 8px;
-                @include flex-between();
+                display: flex;
+                gap: 20px;
                 align-items: center;
                 h2 {
                     font-family: poppins;
@@ -60,7 +68,6 @@
                     font-weight: 500;
                     line-height: 150%;
                     color: $text-black;
-                    margin-left: -80px;
                     span {
                         color: $header-text;
                     }

@@ -2541,6 +2541,7 @@
   margin: 0 auto;
   background-color: #f2f2f2;
   padding: 60px 0;
+  overflow: hidden;
 }
 .testimonials-top {
   width: 92%;
@@ -2563,6 +2564,7 @@
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
+  border: none;
 }
 .testimonials-top-buttons-1:hover {
   background-color: #00b207;
@@ -2573,15 +2575,18 @@
 .testimonials-content {
   width: 92%;
   margin: 20px auto;
+  overflow: hidden;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
   display: flex;
-  justify-content: space-between;
 }
 .testimonials-content-card {
-  width: 424px;
+  width: 33.3%;
   height: 254px;
   border-radius: 8px;
   padding: 24px;
   gap: 16px;
+  flex: 0 0 33.33%;
   background-color: white;
   filter: drop-shadow(0 10px 0px rgba(0, 0, 0, 0.0117647059));
   display: flex;
@@ -2599,7 +2604,7 @@
   height: 64px;
   padding-top: 8px;
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 .testimonials-content-card-bottom h2 {
@@ -2608,7 +2613,6 @@
   font-weight: 500;
   line-height: 150%;
   color: #1a1a1a;
-  margin-left: -80px;
 }
 .testimonials-content-card-bottom h2 span {
   color: #999999;
